@@ -21,4 +21,6 @@
 1. 문제 분야 (영단어 , 속담 , 사자성어 , 수도 , 역사 , 통합) 설정
 2. 문제 개수 설정
 3. 알람 시간 설정
-4. 알람 메모 설정
+4. 알람 메모 설정  
+<img src="https://user-images.githubusercontent.com/68943993/141069603-119f7178-3bf0-4c0c-9927-e603cd1e57c5.PNG" width="200" height="400">      <img src="https://user-images.githubusercontent.com/68943993/141069617-b9e8940f-f375-43e5-a84b-3d797b238723.PNG" width="200" height="400">
+
