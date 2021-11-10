@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/dia_nq"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RadioGroup
+        android:id="@+id/rg_nq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <RadioButton
+            android:id="@+id/rb_nq1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:text="1"
+            android:layout_margin="5dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/btn_drawable"
+            android:textStyle="bold"
+            android:textColor="@drawable/clickable_words"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/rb_nq2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_toRightOf="@id/rb_nq1"
+            android:text="2"
+            android:layout_margin="5dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/tgbtn_drawable"
+            android:textStyle="bold"
+            android:textColor="@drawable/clickable_words"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/rb_nq3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/rb_nq1"
+            android:text="3"
+            android:layout_margin="5dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/tgbtn_drawable"
+            android:textStyle="bold"
+            android:textColor="@drawable/clickable_words"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/rb_nqno"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif"
+            android:button="@android:color/transparent"
+            android:background="@drawable/tgbtn_drawable"
+            android:textStyle="bold"
+            android:textColor="@drawable/clickable_words"
+            android:textAlignment="center"
+            android:text="문제없이 알람끄기"
+            android:textSize="12dp" />
+
+    </RadioGroup>
+
+</RelativeLayout>

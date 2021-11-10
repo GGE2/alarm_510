@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_alarm"
+        android:enabled="true"
+        android:icon="@drawable/clock"
+        android:title="알람"/>
+
+    <item
+        android:id="@+id/action_study"
+        android:enabled="true"
+        android:icon="@drawable/pencil"
+        android:title="학습"/>
+
+
+    <item
+        android:id="@+id/action_wronganswer_note"
+        android:enabled="true"
+        android:icon="@drawable/note"
+        android:title="오답노트"/>
+
+
+    <item
+        android:id="@+id/action_viewmore"
+        android:enabled="true"
+        android:icon="@drawable/viewmore"
+        android:title="더보기"/>
+
+
+</menu>

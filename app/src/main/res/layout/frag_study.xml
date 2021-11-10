@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_mint_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08">
+
+        <ScrollView
+            android:id="@+id/bg_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_background"
+            app:layout_constraintTop_toTopOf="@+id/bottom_background">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/background_mint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:layout_constraintBottom_toBottomOf="@+id/bg_scroll"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/bg_scroll">
+
+
+                <ImageButton
+                    android:id="@+id/go_English"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/problemtype_button_radius"
+                    app:layout_constraintBottom_toTopOf="@id/go_proverb"
+                    app:layout_constraintEnd_toStartOf="@+id/go_capital"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/english" />
+
+                <TextView
+                    android:id="@+id/English_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="영단어"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/go_English"
+                    app:layout_constraintEnd_toEndOf="@+id/go_English"
+                    app:layout_constraintStart_toStartOf="@+id/go_English"
+                    app:layout_constraintTop_toTopOf="@+id/go_English"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageButton
+                    android:id="@+id/go_capital"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/problemtype_button_radius"
+                    app:layout_constraintBottom_toTopOf="@id/go_idiom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/go_English"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/sudo" />
+
+                <TextView
+                    android:id="@+id/capital_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="145dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="수도"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/go_capital"
+                    app:layout_constraintEnd_toEndOf="@+id/go_capital"
+                    app:layout_constraintHorizontal_bias="0.518"
+                    app:layout_constraintStart_toStartOf="@+id/go_capital"
+                    app:layout_constraintTop_toTopOf="@+id/go_capital"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageButton
+                    android:id="@+id/go_proverb"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/problemtype_button_radius"
+                    app:layout_constraintBottom_toTopOf="@id/go_history"
+                    app:layout_constraintEnd_toStartOf="@+id/go_idiom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/go_English"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/sogdam" />
+
+                <TextView
+                    android:id="@+id/proverb_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="128dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="속담"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/go_proverb"
+                    app:layout_constraintEnd_toEndOf="@+id/go_proverb"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="@+id/go_proverb"
+                    app:layout_constraintTop_toTopOf="@+id/go_proverb"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageButton
+                    android:id="@+id/go_idiom"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/problemtype_button_radius"
+                    app:layout_constraintBottom_toTopOf="@id/go_integrated"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/go_proverb"
+                    app:layout_constraintTop_toBottomOf="@+id/go_capital"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/sajaseongeo" />
+
+                <TextView
+                    android:id="@+id/idiom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="사자성어"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/go_idiom"
+                    app:layout_constraintEnd_toEndOf="@+id/go_idiom"
+                    app:layout_constraintHorizontal_bias="0.509"
+                    app:layout_constraintStart_toStartOf="@+id/go_idiom"
+                    app:layout_constraintTop_toTopOf="@+id/go_idiom"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageButton
+                    android:id="@+id/go_history"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/problemtype_button_radius"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/go_integrated"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/go_proverb"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/yeogsa" />
+
+                <TextView
+                    android:id="@+id/history_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="135dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="역사"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/go_history"
+                    app:layout_constraintEnd_toEndOf="@+id/go_history"
+                    app:layout_constraintStart_toStartOf="@+id/go_history"
+                    app:layout_constraintTop_toTopOf="@+id/go_history" />
+
+                <ImageButton
+                    android:id="@+id/go_integrated"
+                    android:layout_width="0dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/problemtype_button_radius"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/go_history"
+                    app:layout_constraintTop_toBottomOf="@+id/go_idiom"
+                    app:layout_constraintVertical_bias="0.005"
+                    app:srcCompat="@drawable/tonghab" />
+
+                <TextView
+                    android:id="@+id/integrate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="136dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="통합"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/go_integrated"
+                    app:layout_constraintEnd_toEndOf="@+id/go_integrated"
+                    app:layout_constraintHorizontal_bias="0.518"
+                    app:layout_constraintStart_toStartOf="@+id/go_integrated"
+                    app:layout_constraintTop_toTopOf="@+id/go_integrated"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

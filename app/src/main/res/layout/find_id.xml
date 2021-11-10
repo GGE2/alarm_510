@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:id="@+id/fi_const1"
+     android:layout_width="match_parent"
+     android:layout_height="150dp"
+     android:background="@color/main_background"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintRight_toRightOf="parent">
+
+     <ImageButton
+         android:id="@+id/fi_back"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         android:layout_marginLeft="20dp"
+         android:src="@drawable/back2x"
+         android:background="@color/main_background"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"/>
+     <androidx.appcompat.widget.AppCompatButton
+         android:id="@+id/fi_id_btn"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:background="@drawable/round_box_gray2"
+         android:text="아이디찾기"
+         android:textColor="@color/text_black_gray"
+         android:fontFamily="@font/noto_regular"
+         android:textSize="15sp"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintRight_toLeftOf="@id/fi_pw_btn"
+         app:layout_constraintBottom_toBottomOf="parent"/>
+     <androidx.appcompat.widget.AppCompatButton
+         android:id="@+id/fi_pw_btn"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:text="비밀번호 찾기"
+         android:textColor="@color/text_black_gray"
+         android:fontFamily="@font/noto_regular"
+         android:textSize="15sp"
+         android:background="@drawable/round_box_gray2"
+         app:layout_constraintLeft_toRightOf="@id/fi_id_btn"
+         app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/fi_const2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/fi_const1"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+    <FrameLayout
+        android:id="@+id/fragView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+
+
+
+
+        >
+
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

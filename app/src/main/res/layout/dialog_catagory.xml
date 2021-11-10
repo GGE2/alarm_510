@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/dia_cat"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <CheckBox
+        android:id="@+id/cb_tong"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:button="@android:color/transparent"
+        android:background="@drawable/btn_drawable"
+        android:textStyle="bold"
+        android:textColor="@drawable/clickable_words"
+        android:text="통합"
+        android:fontFamily="sans-serif"
+        android:textSize="12dp"/>
+    <CheckBox
+        android:id="@+id/cb_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/cb_tong"
+        android:button="@android:color/transparent"
+        android:background="@drawable/btn_drawable"
+        android:gravity="center"
+        android:text="영단어"
+        android:textStyle="bold"
+        android:textColor="@drawable/clickable_words"
+        android:fontFamily="sans-serif"
+        android:textSize="12dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_su"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_drawable"
+        android:button="@android:color/transparent"
+        android:gravity="center"
+        android:text="수도"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/clickable_words"
+        android:fontFamily="sans-serif"
+        android:layout_toRightOf="@+id/cb_eng"/>
+
+    <CheckBox
+        android:id="@+id/cb_sok"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:button="@android:color/transparent"
+        android:background="@drawable/btn_drawable"
+        android:gravity="center"
+        android:text="속담"
+        android:textColor="@drawable/clickable_words"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/cb_tong"/>
+
+    <CheckBox
+        android:id="@+id/cb_saja"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:button="@android:color/transparent"
+        android:background="@drawable/btn_drawable"
+        android:gravity="center"
+        android:text="사자성어"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/clickable_words"
+        android:layout_toRightOf="@+id/cb_sok"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/cb_eng"/>
+
+    <CheckBox
+        android:id="@+id/cb_his"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:button="@android:color/transparent"
+        android:background="@drawable/btn_drawable"
+        android:gravity="center"
+        android:text="역사"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@drawable/clickable_words"
+        android:layout_toRightOf="@+id/cb_saja"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/cb_su"/>
+
+
+
+</RelativeLayout>

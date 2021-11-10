@@ -1,0 +1,7 @@
+1. 오답노트 가져오기
+- url : localhost:3000/getWrongProblems?user_id=abcd1234
+- parameter : user_id=abcd1234
+- response : 
+[{'problem_id' : 1,
+'datetime' : 2021- 01 - 01 오후 07:35,
+'category_name' : 영단어}]

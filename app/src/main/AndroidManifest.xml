@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alarm"
+    android:installLocation="preferExternal">
+
+    <!-- 인터넷 사용 권한 설정-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- 위치정보 권한 설정-->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION/"/>
+
+    <application
+
+
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon3"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Alarm"
+
+        android:usesCleartextTraffic="true"
+        android:name="com.example.Login.etc.GlobalApplication">
+
+
+
+        <activity android:name="com.example.Login.activities.SplashActivity2"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="com.example.Login.activities.LoginActivity"/>
+        <activity android:name="com.example.Login.activities.SplashActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="18a27a26b489825df91b6a8baff47daa"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+
+        <activity android:name="com.example.Login.activities.StartPopupActivity"
+               android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity android:name="com.example.Login.activities.ResetPopupActivity"
+                android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity android:name="com.example.Login.activities.SignUpActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.example.Login.activities.SignUp2Activity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.example.Login.activities.FindAccountActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.example.MainService.Alarm.activities.DivideFragmentActivity"
+            android:configChanges="orientation|screenSize"/>
+
+        <activity android:name="com.example.MainService.Alarm.activities.AddAlarmActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.example.MainService.Alarm.activities.FixAlarmActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.example.MainService.Alarm.activities.Alarm_Problem"/>
+        <receiver android:name="com.example.MainService.Alarm.activities.AlarmReceiver"/>
+        <receiver android:name="com.example.MainService.Alarm.activities.ReStartService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReStartService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="ACTION.RESTART.PersistentService"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.example.MainService.Alarm.activities.SetAlarmActivity"/>
+        <service
+            android:name="com.example.MainService.Alarm.activities.RingtoneService"
+            android:enabled="true"></service>
+        <service android:name="com.example.MainService.Alarm.activities.PersistentService"
+            android:enabled="true"
+            android:process=":remote" ></service>
+
+        <activity android:name="com.example.MainService.StudyGame.fragments.Problem"/>
+
+        <activity android:name="com.example.MainService.VM.fragments.activities.ServiceInformation"/>
+        <activity android:name="com.example.MainService.VM.fragments.activities.Opensource_License"/>
+        <activity android:name="com.example.MainService.VM.fragments.activities.Term_Of_Service"/>
+        <activity android:name="com.example.MainService.VM.fragments.activities.Privacy_Policy"/>
+        <activity android:name="com.example.MainService.VM.fragments.activities.QuestionActivity"/>
+        <activity android:name="com.example.MainService.VM.fragments.activities.NoticeActivity" />
+
+
+        <!--<activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                &lt;!&ndash;Redirect URI: "kakao{NATIVE_APP_KEY}://oauth"&ndash;&gt;
+                <data
+                    android:host="oauth"
+                    android:scheme="@string/KAKAO_NATIVE_APP_KEY"/>
+            </intent-filter>
+        </activity>-->
+    </application>
+
+</manifest>

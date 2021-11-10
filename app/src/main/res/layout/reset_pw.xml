@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/reset_frag_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="새 비밀번호를 설정해주세요"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/noto_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pw_shadow_btn"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/reset_frag_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/reset_pw_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noto_regular"
+        android:text="새 비밀번호"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        app:layout_constraintTop_toBottomOf="@id/pw_shadow_btn"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/reset_pw_input1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:hint ="새 비밀번호"
+        android:background="@drawable/round_box_gray"
+        android:inputType="text"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset_pw_text" />
+
+
+    <TextView
+        android:id="@+id/reset_pw_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/noto_regular"
+        android:text="새 비밀번호 확인"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        app:layout_constraintTop_toBottomOf="@id/reset_pw_input1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/reset_pw_input2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:hint ="새 비밀번호 확인"
+        android:background="@drawable/round_box_gray"
+        android:inputType="text"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset_pw_text2" />
+
+
+    <TextView
+        android:id="@+id/reset_pw_check_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/noto_medium"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/reset_pw_input2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reset_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:text="비밀번호 변경"
+        android:fontFamily="@font/noto_regular"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/round_box_black"
+        android:paddingLeft="15dp"
+        android:drawablePadding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset_pw_check_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

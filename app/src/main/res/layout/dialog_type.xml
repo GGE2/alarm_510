@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/dia_type"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_bell"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/bell"
+            android:background="@drawable/btn_drawable"
+            android:textStyle="bold"
+            android:textColor="@drawable/clickable_words"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:layout_margin="10dp"
+            android:text="벨" />
+
+        <RadioButton
+            android:id="@+id/rb_vibration"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/vibration"
+            android:background="@drawable/btn_drawable"
+            android:textStyle="bold"
+            android:textColor="@drawable/clickable_words"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:layout_margin="10dp"
+            android:text="진동" />
+
+    </RadioGroup>
+
+</RelativeLayout>

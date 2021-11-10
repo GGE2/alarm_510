@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <TextView
+        android:id="@+id/pw_frag_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호를 잃어 버리셨나요?"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/noto_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pw_shadow_btn"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/pw_frag_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/findpw_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/noto_regular"
+        android:text="가입시 입력한 아이디"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        app:layout_constraintTop_toBottomOf="@id/pw_shadow_btn"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/findpw_id_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:hint ="아이디"
+        android:background="@drawable/round_box_gray"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/findpw_text" />
+
+    <TextView
+        android:id="@+id/findpw_id_check_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/noto_medium"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/findpw_id_input"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/findpw_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/noto_regular"
+        android:text="가입시 입력한 휴대폰번호"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        app:layout_constraintTop_toBottomOf="@id/findpw_id_check_text"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/findpw_phoneNumber_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:hint ="'-'을 제외하고 입력해주세요."
+        android:background="@drawable/round_box_gray"
+        android:inputType="number"
+        android:maxLength="11"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/findpw_text2" />
+
+
+    <TextView
+        android:id="@+id/findpw_email_check_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/noto_medium"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/findpw_phoneNumber_input"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/findpw_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:text="비밀번호 찾기"
+        android:fontFamily="@font/noto_regular"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/round_box_black"
+        android:paddingLeft="15dp"
+        android:drawablePadding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/findpw_phoneNumber_input" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

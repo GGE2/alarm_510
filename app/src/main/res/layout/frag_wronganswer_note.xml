@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/const_wrong"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#54D2C2"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="#787878">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/wrong_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+
+            android:text="전체" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/wrong_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영단어" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/wrong_capital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수도" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/wrong_proverb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="속담" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/wrong_idiom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사자성어" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/wrong_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="역사" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/background_mint_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs">>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
