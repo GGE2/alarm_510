@@ -35,4 +35,6 @@
 2. 틀린 문제들은 오답노트로 이동  
 <img src="https://user-images.githubusercontent.com/68943993/141070259-7678050d-ed7f-4048-80eb-36cb0a1be3af.PNG" width="200" height="400">    <img src="https://user-images.githubusercontent.com/68943993/141070358-bf97098e-97fb-46a4-a3e7-de73cd24d861.PNG" width="200" height="400">   <img src="https://user-images.githubusercontent.com/68943993/141070381-65d621f0-f553-4569-a8c2-36f8b2a5ba4f.PNG" width="200" height="400">
 
-
++ #### [설정]
+1. 로그아웃 ( 회원가입 유저 , 카카오 로그인 유저 토큰을 따로 구분)
+<img src="https://user-images.githubusercontent.com/68943993/141071971-0a099c2f-bab4-4dff-ac4d-2ade8d651bd4.jpg" width="200" height="400">
