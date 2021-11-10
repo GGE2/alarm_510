@@ -12,7 +12,7 @@
 ------------------------------------
 + #### [로그인]
 1. 회원가입을 통한 일반로그인 지원  
-![01  메인 – 간편로그인](https://user-images.githubusercontent.com/68943993/141063292-22406498-332f-40ba-a779-1b7472bf2374.png)
+<img src="https://user-images.githubusercontent.com/68943993/141063292-22406498-332f-40ba-a779-1b7472bf2374.png" width="200" height="400">
 ![01  메인 _ 회원가입 - 아이디,비밀번호@2x](https://user-images.githubusercontent.com/68943993/141063508-2cd756bf-b490-4544-ad33-24174ba4652e.png)
 ![01  메인 _ 회원가입 _ 기본정보@2x](https://user-images.githubusercontent.com/68943993/141063582-d98ef56c-4e99-45da-9d4d-2a6c783dabac.png)
 3. 카카오계정 연동을 통한 카카오로그인 지원
