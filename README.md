@@ -16,3 +16,9 @@
 2. 카카오계정 연동을 통한 카카오계정 로그인 지원
 3. 아이디찾기 및 비밀번호 재설정 지원  
 <img src="https://user-images.githubusercontent.com/68943993/141065459-6c59ad14-db05-4f14-9fb6-f34f102a8ceb.PNG" width="250" height="400">    <img src="https://user-images.githubusercontent.com/68943993/141065450-d25660ca-725f-4518-9f14-e412d4828653.PNG" width="250" height="400">
+
++ #### [알람설정]
+1. 문제 분야 (영단어 , 속담 , 사자성어 , 수도 , 역사 , 통합) 설정
+2. 문제 개수 설정
+3. 알람 시간 설정
+4. 알람 메모 설정
