@@ -19,6 +19,15 @@ Web Server : AWS EC2 (Node.js)
 카카오계정 로그인 : Kakao Access Token -> Firebase  Auth Token 으로 변환 후 인증  
 
 --------------------------------------------------------------
+### 프로그램 순서도
+
++ 카카오계정 로그인
+![1 Kako Login Flow Chart](https://user-images.githubusercontent.com/68943993/141077029-c2b20fcc-b661-4c14-9da5-cddd6f3b6d1a.PNG)  
++ 일반 로그인
+![Normal Loign Flow Chart](https://user-images.githubusercontent.com/68943993/141077079-878c5646-394b-4cbc-a0ff-f246f9be8fd0.PNG)
+
+
+-----------------------------------------
 ### 기능
 ------------------------------------
 
