@@ -24,3 +24,9 @@
 4. 알람 메모 설정  
 <img src="https://user-images.githubusercontent.com/68943993/141069603-119f7178-3bf0-4c0c-9927-e603cd1e57c5.PNG" width="200" height="400">      <img src="https://user-images.githubusercontent.com/68943993/141069617-b9e8940f-f375-43e5-a84b-3d797b238723.PNG" width="200" height="400">
 
++ #### [오답노트]
+1. 틀린 문제들은 오답노트로 이동
+2. 문제 카테고리별 분류 가능
+3. 문제 탭 클릭시 문제 키워드 알림  
+<img src="https://user-images.githubusercontent.com/68943993/141070441-0eea2ad0-3e0c-4573-b68c-1dbfd9164931.PNG" width="200" height="400">    
+
