@@ -33,6 +33,6 @@
 + #### [학습하기]
 1. 문제 분야 (영단어 , 속담 , 사자성어 , 수도 , 역사 , 통합) 중 원하는 카테고리 문제 풀기
 2. 틀린 문제들은 오답노트로 이동  
-<img src="https://user-images.githubusercontent.com/68943993/141070259-7678050d-ed7f-4048-80eb-36cb0a1be3af.PNG" width="200" height="400">    <img src=https://user-images.githubusercontent.com/68943993/141070358-bf97098e-97fb-46a4-a3e7-de73cd24d861.PNG" width="200" height="400">   <img src=https://user-images.githubusercontent.com/68943993/141070381-65d621f0-f553-4569-a8c2-36f8b2a5ba4f.PNG" width="200" height="400">
+<img src="https://user-images.githubusercontent.com/68943993/141070259-7678050d-ed7f-4048-80eb-36cb0a1be3af.PNG" width="200" height="400">    <img src="https://user-images.githubusercontent.com/68943993/141070358-bf97098e-97fb-46a4-a3e7-de73cd24d861.PNG" width="200" height="400">   <img src="https://user-images.githubusercontent.com/68943993/141070381-65d621f0-f553-4569-a8c2-36f8b2a5ba4f.PNG" width="200" height="400">
 
 
